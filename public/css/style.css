@@ -1,0 +1,139 @@
+.ui {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 15px 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.totte {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 100%;
+    color: #303030;
+    /* margin: 10px 3px; */
+    border-radius: 50%;
+    position: relative;
+}
+.totte img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 55px;
+}
+
+.totte a:active {
+    color: #ff0000;
+}
+
+#snap{
+    max-width: 100%;
+    height: auto;
+    display: block;;
+    visibility: hidden;
+    margin:0 auto;
+    box-shadow: 0 0 8px gray;
+}
+.ui .totte.disabled {
+    pointer-events: none;
+    color: #cccccc;
+}
+#snap.visible {
+    visibility: visible;
+}
+
+
+canvas{
+    z-index: 100px;
+}
+
+
+/* LINE point */
+.line_btn img{
+   width: 120px !important;
+}
+
+
+
+/* modal */
+.none{
+    display: none;
+}
+
+#modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+    background-color: rgba(255,255,255, 0.9);
+    /* border-radius: 20px; */
+    margin:0 auto;
+}
+
+.close{
+    text-align: end;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.hozon{
+    margin-bottom:20px;
+}
+
+.hozon a{
+    color:#303030;
+    text-decoration: none;
+}
+
+
+/* 上部のinfo */
+.info{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 15px 30px;
+    /* text-align: center; */
+    box-sizing: border-box;
+}
+
+.info_img{
+    width: 50px;
+    margin: 5px;
+
+}
+
+
+/* 文字 */
+
+#hold_over_marker {
+    position: fixed;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: calc(5vw);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.70);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* visibility: hidden; */
+}
+
+.none{
+    display:none;
+}
